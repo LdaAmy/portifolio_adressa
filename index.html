@@ -11,26 +11,40 @@
       scroll-behavior: smooth;
     }
     .foto-perfil {
-      max-width: 200px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      border: 5px solid #fff;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-    .timeline li {
-      position: relative;
-      padding-left: 20px;
-    }
-    .timeline li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.4em;
-      width: 10px;
-      height: 10px;
-      background-color: #0d6efd;
-      border-radius: 50%;
-    }
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+/* Ajuste de margens para seções */
+section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Responsividade para títulos grandes */
+#titulo {
+  font-size: 2rem;
+}
+#subtitulo {
+  font-size: 1.2rem;
+}
+
+/* Cartões do portfólio em uma coluna no mobile */
+@media (max-width: 767px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
   </style>
 </head>
 <body>
@@ -65,8 +79,8 @@
 
   <section id="sobre" class="container text-center my-5">
     <h2 class="mb-4">Sobre Mim</h2>
-    <p>Sou engenheira civil com mais de 10 anos de experiência em projetos de pequeno, médio e grande porte. Me especializei em soluções sustentáveis e tecnologias modernas para construção civil.</p>
-    <p>Formada pela Universidade Federal de Minas Gerais (UFMG), com pós-graduação em Engenharia Sustentável e certificações internacionais em gestão de obras.</p>
+    <p>Sou graduanda de engenharia civil pelo IFSP de Caraguatatuba desde 2022 e atuo principalmente na realização de projetos BIM de modelagem da construção civil utilizando o Revit para maior eficiência nas etapas de planejamento, execução e entrega de projetos. Tenho como experiência elaboração de orçamentos,</p>
+    <p> leitura de projetos, planejamento de obras e elaboração de relatórios de acompanhamento de obras públicas por conta do estágio na prefeitura de São Sebastião.</p>
   </section>
 
   <section id="experiencia" class="bg-light py-5">
@@ -75,7 +89,7 @@
       <ul class="timeline list-unstyled">
         <li class="mb-3">🔧 2018 - 2020: Ensino médio técnico em marketing – ETEC</li>
         <li class="mb-3">🌱 2021 - 2023: Auxiliar de manutenção de edificações – D E C MANUTENCAO E SERVICOS PARA CONSTRUCAO</li>
-        <li>🏗️ 2021 - Atual: Engenheira-chefe na Camila Engenharia</li>
+        <li>🏗️ 2021 - Atual: Engenheira-chefe na Engenharia</li>
       </ul>
     </div>
   </section>
