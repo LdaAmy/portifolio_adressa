@@ -50,7 +50,7 @@ gsap.utils.toArray(".col-md-4").forEach((card, i) => {
   gsap.from(card, {
     opacity: 0,
     y: 40,
-    delay: i * 0.2,
+    delay: i * 0.1,
     duration: 0.8,
     scrollTrigger: {
       trigger: card,
