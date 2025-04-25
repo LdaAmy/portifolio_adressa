@@ -1,6 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// Animação inicial do header
 gsap.from("#titulo", {
   duration: 1,
   y: -60,
@@ -45,12 +44,11 @@ gsap.utils.toArray(".timeline li").forEach((item, index) => {
   });
 });
 
-// Animação para os cards de serviços e projetos
 gsap.utils.toArray(".col-md-4").forEach((card, i) => {
   gsap.from(card, {
     opacity: 0,
     y: 40,
-    delay: i * 0.1,
+    delay: i * 0.2,
     duration: 0.8,
     scrollTrigger: {
       trigger: card,
@@ -74,7 +72,6 @@ gsap.utils.toArray("#portfolio .col-md-4").forEach((card, i) => {
     });
   });
 
-// Mostrar botão de voltar ao topo
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 window.onscroll = () => {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
